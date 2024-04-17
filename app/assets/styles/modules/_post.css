@@ -1,0 +1,206 @@
+.post {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-main);
+}
+
+.post__profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.post__profile__img {
+    width: 2.5rem;
+    padding-right: 1.5rem;
+}
+
+.post__profile__name {
+    font-size: var(--desktop-text-medium);
+}
+
+.post__profile__time {
+    margin-left: auto;
+    opacity: 0.5;
+}
+
+.post__profile__time--down {
+    display: flex;
+    justify-content: flex-end;
+    font-size: var(--desktop-text-xsmall);
+}
+
+.post__profile__community {
+    margin-left: auto;
+    opacity: 0.5;
+    font-size: var(--desktop-text-small);
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+hr {
+    opacity: 0.5;
+    margin: 0;
+}
+
+.post__title {
+    font-size: var(--desktop-text-medium);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.post__title:hover {
+    transform: translateX(0.5rem);
+    color: var(--color-main);
+}
+
+.post__detail {
+    font-size: var(--desktop-text-small);
+    text-align: justify;
+}
+
+.post__reactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.post__reactions--hidden {
+    display: none;
+}
+
+.post__reactions__list {
+    padding-right: 2.5rem;
+}
+
+.post__reactions__list.clicked {
+    background-color: var(--color-white);
+    color: var(--color-main);
+}
+
+.post__reactions__list .reaction-button {
+    border: none;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.post__reactions__list i {
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 860px) {
+    .post {
+        padding: 0.5rem 1rem;
+    }
+    .post__profile__img {
+        width: 1.75rem;
+        padding-right: 1rem;
+    }
+    .post__profile__name,
+    .post__title {
+        font-size: var(--tablet-text-medium);
+    }
+    .post__profile__community,
+    .post__profile__time,
+    .post__detail,
+    .post__reactions {
+        font-size: var(--tablet-text-small);
+    }
+    .post__profile__time--down {
+        font-size: var(--tablet-text-xsmall);
+    }
+
+    .post__reactions__list {
+        padding-right: 1.25rem;
+    }
+    .post__reactions__list i {
+        padding-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 693px) {
+    .post__profile__img {
+        width: 1.5rem;
+        padding-right: 0.75rem;
+    }
+    .post__profile__img {
+        width: 1.5rem;
+        padding-right: 0.75rem;
+    }
+    .post__profile__name,
+    .post__profile__community,
+    .post__title {
+        font-size: var(--mobile-text-medium);
+    }
+    .post__profile__time,
+    .post__detail,
+    .post__reactions {
+        font-size: var(--mobile-text-small);
+    }
+    .post__profile__time--down {
+        font-size: var(--mobile-text-xsmall);
+    }
+    .post__reactions__list {
+        padding-right: 1rem;
+    }
+    .post__reactions__list i {
+        padding-right: 0.25rem;
+    }
+}
+
+.userprofile{
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userprofile img{
+    width: 5rem;
+    height: 5rem;
+    padding-right: 2rem;
+}
+
+.userprofile__username{
+    font-size: var(--desktop-text-mid);
+}
+
+@media (max-width: 860px) {
+    .userprofile{
+        padding: 0.5rem 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .userprofile img{
+        width: 3rem;
+        height: 3rem;
+        padding-right: 1.25rem;
+    }
+
+    .userprofile__username{
+        font-size: var(--tablet-text-mid);
+    }
+}
+
+@media (max-width: 693px) {
+    .userprofile{
+        padding: 0.25rem 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .userprofile img{
+        width: 2rem;
+        height: 2rem;
+        padding-right: 1rem;
+    }
+    .userprofile__username{
+        font-size: var(--mobile-text-mid);
+    }
+}
